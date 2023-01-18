@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgb(12, 5, 43);
+    color:white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: rgb(12, 5, 43);
+    color:white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.principle{
+    display: grid;
+    text-align: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: auto;
+    box-shadow: 10px;
+    align-items: center; 
+    grid-gap: 20px; 
+}
+
+h2{
+    background-color: rgb(59, 58, 58);
+    color:white; 
+    padding: 20px;
+}
+ 
+.clean{
+    grid-row: 1/2;
+    padding: 1rem;
+    border: #e4e4e4 solid 5px;
+    border-radius: 10px;
+    grid-gap: 20px; 
+    background-color: rgb(214, 213, 213);
+}
+
+.contrast{
+    grid-row: 2/3;
+    padding: 1rem;
+    border: #e4e4e4 solid 5px;
+    border-radius: 10px;
+    grid-gap: 20px; 
+    background-color: rgb(214, 213, 213);
+}
+
+.repetition{
+    grid-row: 3/4;
+    padding: 1rem;
+    border: #e4e4e4 solid 5px;
+    border-radius: 10px;
+    grid-gap: 20px; 
+    background-color: rgb(214, 213, 213);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+    .principle{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .clean{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .contrast{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .repetition{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+}
+
+@media only screen and (min-width: 1280px) {
+    .principle{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    
+    .clean{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .contrast{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    
+    .repetition{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    
+    }
+}

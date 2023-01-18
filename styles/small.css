@@ -1,0 +1,43 @@
+
+*{
+    width: 600px;
+    border-radius: 20px;
+
+}
+
+header{
+    display: flex;
+    background-color:rgb(34, 89, 177);
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgb(126, 130, 137);
+}
+
+h1{
+    font-size: 2em;
+    color:white;
+    margin-top: 55px;
+    padding: 20px;
+    text-align: center;
+}
+
+h2{
+    padding: 10px;
+}
+
+footer{
+    display: block;
+    background-color:rgb(34, 89, 177);
+    color:white;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgb(126, 130, 137);
+}
+
+img{
+    width: 70px;
+    height: auto;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 10px 20px 0 rgb(2, 10, 22);
+}
+

@@ -1,0 +1,25 @@
+@media only screen and (min-width: 32.5em)  {
+
+    *{
+      width: 800px;
+      border-radius: 20px;
+  }
+
+    header{
+      display: flex;
+      background-color:rgb(34, 89, 177);
+      text-align: center;
+      box-shadow: 0 5px 5px 0 rgb(191, 203, 225);
+  }
+    
+    img{
+      width: 100px;
+      height: auto;
+      border-radius: 20px;
+      margin: 10px;
+      box-shadow: 0 10px 20px 0 rgb(190, 210, 240);
+  }
+    p{
+      font-weight: bolder;
+    }
+  }
