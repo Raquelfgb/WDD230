@@ -1,15 +1,17 @@
 
-*{
+body {
+    margin: auto;
     width: 600px;
-    border-radius: 20px;
-
+    margin-top: 30px;
 }
+
 
 header{
     display: flex;
     background-color:rgb(34, 89, 177);
     text-align: center;
     box-shadow: 0 5px 5px 0 rgb(126, 130, 137);
+    border-radius: 20px;
 }
 
 h1{
