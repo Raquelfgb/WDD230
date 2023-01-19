@@ -31,6 +31,17 @@ p{
     margin: 0 auto;
 }
 
+h2{
+    background-color: rgb(59, 58, 58);
+    color:white; 
+    padding: 20px;
+}
+
+main{
+    display: grid;
+    padding-top: 2rem;
+}
+
 .principle{
     display: grid;
     text-align: center;
@@ -38,13 +49,8 @@ p{
     grid-template-columns: auto;
     box-shadow: 10px;
     align-items: center; 
-    grid-gap: 20px; 
-}
-
-h2{
-    background-color: rgb(59, 58, 58);
-    color:white; 
-    padding: 20px;
+    grid-gap: 10px;
+    
 }
  
 .clean{
@@ -52,7 +58,6 @@ h2{
     padding: 1rem;
     border: #e4e4e4 solid 5px;
     border-radius: 10px;
-    grid-gap: 20px; 
     background-color: rgb(214, 213, 213);
 }
 
@@ -61,7 +66,6 @@ h2{
     padding: 1rem;
     border: #e4e4e4 solid 5px;
     border-radius: 10px;
-    grid-gap: 20px; 
     background-color: rgb(214, 213, 213);
 }
 
@@ -70,7 +74,6 @@ h2{
     padding: 1rem;
     border: #e4e4e4 solid 5px;
     border-radius: 10px;
-    grid-gap: 20px; 
     background-color: rgb(214, 213, 213);
 }
 
@@ -78,7 +81,7 @@ h2{
     .principle{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto;
     }
     
     .clean{
