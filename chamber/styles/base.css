@@ -1,13 +1,24 @@
 header, footer{
     background-color: rgb(5, 107, 107);
+    text-align: center;
 }
 
 header{
     text-align: center;
 }
 
+.layout{
+    display: flex;
+}
+
 .title{
+    text-align: center;
     color: white;
+}
+
+.social img{
+    border-radius: 100px;
+    max-width: 50px;
 }
 
 nav {
@@ -30,6 +41,7 @@ nav {
 	padding: 1rem;
 	text-align: left;
 	text-decoration: none;
+    color:aliceblue;
 }
 
 #menu::before {
@@ -61,6 +73,10 @@ fieldset{
 main{
     display: grid;
     grid-template-columns: auto;
+}
+
+section{
+    padding: 20px;
     background-color:rgb(209, 238, 239);
 }
 
