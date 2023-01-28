@@ -1,0 +1,73 @@
+header, footer{
+    background-color: rgb(5, 107, 107);
+}
+
+header{
+    text-align: center;
+}
+
+.title{
+    color: white;
+}
+
+nav {
+	margin: 0 auto;
+	max-width: auto;
+}
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+}
+
+#menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: rgb(28, 88, 94);
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive #menu::before {
+	content: "X";
+}
+
+fieldset{
+    text-align: center;
+    margin: 0 auto;
+    background-color: rgb(92, 200, 203);
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: auto;
+    background-color:rgb(209, 238, 239);
+}
+
+.spotlight{
+    display: grid;
+}
+
+.spotlight3{
+    display: none;
+}
