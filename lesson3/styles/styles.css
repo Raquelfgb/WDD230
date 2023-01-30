@@ -132,4 +132,8 @@ td {
         padding: 100px;
         max-width: 60%;
     }
+
+    .scene{
+        margin: 60px auto;
+    }
 }
