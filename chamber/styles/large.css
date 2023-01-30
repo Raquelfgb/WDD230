@@ -57,5 +57,6 @@
     
     .spotlight3{
         grid-row: 3/4;
+        display: inline;
     }
 }
