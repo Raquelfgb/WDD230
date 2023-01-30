@@ -89,8 +89,27 @@ td {
 }
 
 .color{
-    max-width: 1200px;
-    padding: 20px;
+    background-color: white;
+}
+
+.first{
+    color: #EDF756;
+    background-color: #51E2F5;
+}
+
+.second{
+    color: #EDF756;
+    background-color: #A28089;
+}
+
+.third{
+    color: #EDF756;
+    background-color: #9DF9EF;
+}
+
+.fourth{
+    color: #EDF756;
+    background-color: #FFA8B6;
 }
 
 @media only screen and (min-width: 1280px) {
