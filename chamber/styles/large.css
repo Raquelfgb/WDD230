@@ -13,6 +13,16 @@
 		display: none;
 	}
 
+    .layout nav{
+        grid-column: 3/4;
+        margin:auto;
+    }
+
+    .social{
+        grid-column: 4/5;
+        margin:auto;
+    }
+
     main{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
