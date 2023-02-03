@@ -42,3 +42,11 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.querySelector("#date").textContent = fulldate;
+
+const banner = document.querySelector('#banner');
+const actualDay = d.getDay();
+
+console.log(actualDay);
+if (daynames !== 'Monday' || daynames !== 'Tuesday') {
+  banner.classList.add('open');
+};

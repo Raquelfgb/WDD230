@@ -9,8 +9,15 @@ header{
     text-align: center;
 }
 
+#banner{
+    background-color: rgb(213, 156, 156);
+    padding:10px;
+    text-align: center;
+    position: relative;
+}
+
 img{
-    width: 150px;
+    max-width: 150px;
     padding-bottom: 10px;
 }
 
@@ -23,10 +30,6 @@ img{
     grid-column: 1/2;
 }
 
-.layout nav{
-    grid-column: 4/5;
-}
-
 .title{
     color: white;
     margin: 0 auto;
@@ -35,6 +38,7 @@ img{
 
 .social{
     grid-column: 3/4;
+    grid-row: 1/2;
     margin: auto;
 }
 
@@ -46,6 +50,8 @@ img{
 nav {
 	margin: 0 auto;
 	max-width: auto;
+    grid-column: 4/5;
+    grid-row: 1/2;
 }
 
 .navigation {
@@ -101,6 +107,7 @@ main{
 section{
     padding: 20px;
     background-color:rgb(209, 238, 239);
+    border: 10px solid rgb(247, 251, 250);
 }
 
 .spotlight{
