@@ -5,8 +5,10 @@ header, footer{
     padding: 20px;
 }
 
-header{
-    text-align: center;
+footer{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
 }
 
 #banner{
@@ -49,7 +51,6 @@ img{
 
 nav {
 	margin: 0 auto;
-	max-width: auto;
     grid-column: 4/5;
     grid-row: 1/2;
 }
@@ -104,7 +105,7 @@ main{
     grid-template-columns: auto;
 }
 
-section{
+.corpo section{
     padding: 20px;
     background-color:rgb(209, 238, 239);
     border: 10px solid rgb(247, 251, 250);
@@ -117,3 +118,8 @@ section{
 .spotlight3{
     display: none;
 }
+
+#name{
+    font-weight: bold;
+}
+
