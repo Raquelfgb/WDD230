@@ -69,11 +69,5 @@
         grid-row: 3/4;
         display: inline;
     }
-
-    .base{
-        display: none;
-    }
-    .large{
-        display:inline-flex
-    }
+   
 }

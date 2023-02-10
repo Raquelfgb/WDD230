@@ -41,11 +41,5 @@
         grid-column: 4/7;
     }
     
-    .base{
-        display: none;
-    }
-
-    .large{
-        display:inline-flex
-    }
+   
 }
