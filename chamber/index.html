@@ -43,9 +43,19 @@
         </fieldset>
     </header>
     <main class="corpo">
-        <section class="hero">Hero</section>
+        <section class="hero">
+            <picture class="photo">
+                <source srcset="images/hero.jpg" media="(min-width:500px)">
+                <img src="images/hero.jpg" alt="Meeting">
+            </picture>
+        </section>
         <section class="event">Event</section>
-        <section class="weather">Weather</section>
+        <section class="weather">
+            <h3>Weather</h3>
+            <p>Currently: <span id="temp">55</span>&#176;F</p>
+            <p>Wind Speed: <span id="speed">10</span> mph</p>
+            <p>WindChill: <span id="wind"></span></p>
+        </section>
         <section class="news">News</section>
         <section class="spotlight">
             <div class="spotlight1">Spotlight 1</div>
@@ -71,5 +81,6 @@
         </section>
     </footer>
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>  
 </html>

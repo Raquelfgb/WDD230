@@ -126,3 +126,8 @@ main{
 .large{
     display:none;
 }
+
+img.photo{
+    width: 100%;
+    height: auto;
+}
