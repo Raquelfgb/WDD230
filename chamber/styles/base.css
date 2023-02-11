@@ -124,7 +124,8 @@ main{
 }
 
 
-img.photo{
+img.hero{
+    float: auto;
     width: 100%;
     height: auto;
 }
