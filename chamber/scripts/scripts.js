@@ -6,7 +6,7 @@ copyrightyear.textContent =`${new Date().getFullYear()}`;
 const lastModified = document.querySelector('#lastmodified');
 lastModified.textContent = new Date(document.lastModified);
 
-const mainnav = document.querySelector('.navigation')
+const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('#menu');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
@@ -59,10 +59,10 @@ function displayBanner() {
     weekday[6] = 'Saturday';
     
     var n = weekday[d.getDay()];
-    if (n == 'Monday') and (n == 'Tuesday'){
-        document.getElementById('#banner').style.display = "block"; 
-    }
-	else {
-        document.getElementById('#banner').style.display = "none"; 
-    }
+    if (n == 'Monday') and (n == 'Tuesday')
+        document.getElementById('#banner').style.display = 'block'; 
+    
+	elseif 
+        document.getElementById('#banner').style.display = 'none'; 
+    
 }
