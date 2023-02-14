@@ -18,6 +18,14 @@ footer{
     position: relative;
 }
 
+.bannershow{
+    display:block;
+}
+
+.bannerhidden{
+    display: none;
+}
+
 img{
     max-width: 150px;
     padding-bottom: 10px;

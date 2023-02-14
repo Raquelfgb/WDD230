@@ -43,7 +43,15 @@ const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.querySelector("#date").textContent = fulldate;
 
-const banner = document.querySelector('#banner');
+const banner = document.getElementById('banner');
+if (dayName === 'Monday', dayName === 'Tuesday') {
+	banner.classList.add('bannershow');
+}
+else{
+	banner.classList.add('bannerhidden');
+}
+
+/*const banner = document.querySelector('#banner');
 const actualDay = d.getDay();
 
 
@@ -60,9 +68,10 @@ function displayBanner() {
     
     var n = weekday[d.getDay()];
     if (n == 'Monday') and (n == 'Tuesday')
-        document.getElementById('#banner').style.display = 'block'; 
+	{
+        document.getElementById('#banner').style.display = 'block'; }
     
-	elseif 
-        document.getElementById('#banner').style.display = 'none'; 
+	else
+	{
+        document.getElementById('#banner').style.display = 'none'; }*/
     
-}
