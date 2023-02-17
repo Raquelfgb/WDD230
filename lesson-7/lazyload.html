@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading</title>
+    <link rel="stylesheet" href="styles/lazy.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <section id="images-box">
+            <img src="https://loremflickr.com/320/240/dog" data-src="https://loremflickr.com/320/240/dog" alt="placeholder dog" loading="lazy">
+            <img src="https://loremflickr.com/g/320/240/paris" data-src="https://loremflickr.com/g/320/240/paris" alt="placeholder paris" loading="lazy">
+            <img src="https://loremflickr.com/320/240/brazil,rio" data-src="https://loremflickr.com/320/240/brazil,rio" alt="placeholder rio" loading="lazy">
+            <img src="https://loremflickr.com/320/240/paris,girl/all" data-src="https://loremflickr.com/320/240/paris,girl/all" alt="placeholder girl" loading="lazy">
+            <img src="https://loremflickr.com/g/320/240/paris,girl/all" data-src="https://loremflickr.com/g/320/240/paris,girl/all" alt="placeholder girl all" loading="lazy">
+            <img src="https://loremflickr.com/320/240" data-src="https://loremflickr.com/320/240" alt="placeholder random" loading="lazy">
+        </section>
+    </main>
+    <footer>
+        <section id="copyright">
+            <p>&copy; <span id="copyrightYear"></span> Lazy Loading | Raquel de Freitas Greco Bueno | WDD230</p>
+        </section>
+    </footer>
+    <script> src="scripts/lazy.js"</script>
+</body>
+</html>
