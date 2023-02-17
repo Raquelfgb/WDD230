@@ -5,11 +5,10 @@
     justify-content: center;
 }
 
-header{
+h1{
     margin: 0;
     padding: auto;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
 section{
