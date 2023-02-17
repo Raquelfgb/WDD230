@@ -1,4 +1,11 @@
-body{
+*{
+    margin: 0;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
     margin: 0;
     padding: auto;
     align-items: center;
