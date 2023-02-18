@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin: 0;
+    padding: auto;
+    text-align: center;
+}
+
+section{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 10px;
+}
+
+img{
+    width: 400px;
+    height: 300px;
+}
