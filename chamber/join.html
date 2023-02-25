@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Project</title>
+    <meta name="description" content="Chamber project for WDD230 winter 2023">
+    <meta name="author" content="Raquel de Freitas Greco Bueno">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/lesson08/styles/table.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+</head>  
+<body>
+    <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
+    <header>
+        <div class="layout">
+            <img src="images/logo10.png" alt="logo of the Calgary Chamber of Commerce">
+            <div class="title">
+                <h1>Calgary</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a id="menu" href="#"></a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discovery</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo"></a>
+            </div>
+        </div>
+        <fieldset>
+            <span id="date"></span>
+        </fieldset>
+    </header>
+    <main>
+        <div class="join">
+            <h1>Join the Calgary Chamber of Commerce</h1>
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="info">First Name* <input type="text" name="fname" required></label><br>
+                    <label class="info">Last Name* <input type="text" name="lname" required></label><br>
+                    <label class="info">Business <input type="text" name="business"
+                            placeholder="Type of business"></label><br>
+                    <label class="info">Email* <input type="email" name="email" placeholder="email@email.com"
+                            required></label><br>
+                    <label class="info">Phone* <input type="tel" name="phone" placeholder="123456789"
+                            required></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="info">Business Name* <input type="text" name="bName" required></label><br>
+                    <label class="info">Business Description<textarea name="description"
+                            placeholder="Brief description of business/company"></textarea></label>
+                    <input type="hidden" name="time" id="today">
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="level"><input type="radio" name="level" value="NP" required> Non-Profit</label><br>
+                    <label class="level"><input type="radio" name="level" value="bronze"> Bronze</label><br>
+                    <label class="level"><input type="radio" name="level" value="silver"> Silver</label><br>
+                    <label class="level"><input type="radio" name="level" value="gold"> Gold</label>
+                </fieldset>
+                <aside>
+                    <div class="benefits">
+                        <table>
+                        <caption>Table: Membership benefits</caption>
+                        <thead>
+                            <tr>
+                                <th colspan="5" scope="colgroup">Membership Benefits</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="highlight"></th>
+                                <th scope="col">Non-Profit</th>
+                                <th scope="col">Bronze</th>
+                                <th scope="col">Silver</th>
+                                <th scope="col">Gold</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Annual cost</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Business listing</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Email alerts</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Company spotlight</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Discounts</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Bonus on events</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                            <tr>
+                                <td>Access to sponsored trainings</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>❌</td>
+                                <td>✅</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <section>
+            <img src="images/logo10.png" alt="Logo for Chamber of Commerce of Calgary">
+            <div class="head">
+                <h2>Calgary Chamber of Commerce</h2>
+                <p>100 Tsutina Road Circle SE <br> Calgary, T1O1O1</p>
+            </div>
+            <p>info@calgarycc.org</p>
+            <p>+1(587)558-7878</p>
+            <p>🎯 Location map address</p>
+        </section>
+        <section class="base">
+            &copy;<span id="copyrightyear"></span> Calgary Chamber of Commerce 
+            <br> <span id="name">Raquel de Freitas Greco Bueno</span> 
+            <br> WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
+        </section>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+</body>  
+</html>

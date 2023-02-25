@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main {
+	margin: 0 auto;
+	border: 1px solid rgb(188, 181, 219);
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: rgb(44, 4, 48);
+	font-family: "Caveat", cursive;
+}
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: rgb(188, 181, 219);
+	text-align: center;
+}
+
+.menu button {
+	padding: 1rem;
+}
+
+article,
+section {
+	margin: 0.75rem;
+}
+
+section {
+	border: 1px solid rgba(85, 3, 106, 0.1);
+	padding: 0.5rem;
+	align-content: center;
+	background-color: rgb(188, 181, 219);
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.1rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+	text-align: left;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+img {
+	height: 75px;
+	max-width: 100%; 
+}
+
+header{
+    text-align: center;
+	font-size: 2rem;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+footer{
+	height: 70px;
+	font-size: 1rem;
+	font-family: "Yaldevi";
+	display: block;
+	text-align: center;
+	padding: 16px;
+	color: white;
+	background-color:  rgb(188, 181, 219);
+	margin-left: 0px;
+}
+
+@media (min-width: 700px) {
+	.list section img {
+		display: block;
+	}
+}
