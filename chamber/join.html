@@ -28,10 +28,10 @@
             <nav>
                 <ul class="navigation">
                     <li><a id="menu" href="#"></a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Discovery</a></li>
-                    <li><a href="#">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discovery</a></li>
+                    <li><a href="/lesson09/directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
@@ -54,6 +54,8 @@
                     <label class="info">Last Name* <input type="text" name="lname" required></label><br>
                     <label class="info">Business <input type="text" name="business"
                             placeholder="Type of business"></label><br>
+                    <label class="info">Business Posititon Title<input type="text" name="businessposition"
+                            placeholder="Business Position Title" pattern="[a-zA-Z0-9\s\]{7,}"></label><br>
                     <label class="info">Email* <input type="email" name="email" placeholder="email@email.com"
                             required></label><br>
                     <label class="info">Phone* <input type="tel" name="phone" placeholder="123456789"
@@ -73,6 +75,9 @@
                     <label class="level"><input type="radio" name="level" value="silver"> Silver</label><br>
                     <label class="level"><input type="radio" name="level" value="gold"> Gold</label>
                 </fieldset>
+                <input type="hidden" id="datetime" name="datetime" value="CurrentTimedate">
+
+                <input type="submit" class="button" value="Submit"></form>
                 <aside>
                     <div class="benefits">
                         <table>
@@ -92,10 +97,10 @@
                         <tbody>
                             <tr>
                                 <td>Annual cost</td>
+                                <td>C$50</td>
                                 <td>C$100</td>
+                                <td>C$150</td>
                                 <td>C$200</td>
-                                <td>C$300</td>
-                                <td>C$400</td>
                             </tr>
                             <tr>
                                 <td>Business listing</td>
