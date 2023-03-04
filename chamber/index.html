@@ -47,7 +47,7 @@
             <picture class="photo">
                 <source srcset="images/hero/hero-large.jpg" media="(min-width: 1280px)">
                 <source srcset="images/hero/hero-medium.jpg" media="(min-width: 768px) and (max-width: 1279px)" >
-                <img src="images/hero/hero-small.jpg" alt="Meeting" width="100%" height="auto">
+                <img src="images/hero/hero-small.jpg" alt="Meeting" width="400px" height="200px">
             </picture>
         </section>
         <section class="event">
@@ -58,9 +58,10 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <p>Currently: <span id="temp">55</span>&#176;F</p>
-            <p>Wind Speed: <span id="speed">10</span> mph</p>
-            <p>WindChill: <span id="wind"></span></p>
+            <img id="weatherIcon" src="" alt="weather icon">
+            <p>Currently: <span id="temp"></span>&#176;F</p>
+            <p>Wind Speed: <span id="speed"></span> mph</p>
+            <p>WindChill: <span id="wind"></span>&#8457</p>
         </section>
         <section class="news">
             <h3>News</h3>
@@ -96,21 +97,23 @@
         </section>
     </main>
     <footer>
-        <section>
+        <div>
             <img src="images/logo10.png" alt="Logo for Chamber of Commerce of Calgary">
-            <div class="head">
-                <h2>Calgary Chamber of Commerce</h2>
-                <p>100 Tsutina Road Circle SE <br> Calgary, T1O1O1</p>
-            </div>
-            <p>info@calgarycc.org</p>
-            <p>+1(587)558-7878</p>
-            <p>🎯 Location map address</p>
-        </section>
-        <section class="base">
+            <p><strong>Calgary Chamber of Commerce</strong> <br>
+                100 Tsutina Road Circle SE<br> 
+                Calgary, T1O1O1<br>
+            </p>
+            <p>info@calgarycc.org<br>
+                +1(587)558-7878<br>
+                <span class="map"><img src="images/mapicon.png" alt="map of the Chamber"></span>
+                <a href="https://maps.google.com">Location Map</a>
+            </p>
+        </div>
+        <div>
             &copy;<span id="copyrightyear"></span> Calgary Chamber of Commerce 
             <br> <span id="name">Raquel de Freitas Greco Bueno</span> 
             <br> WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
-        </section>
+        </div>
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/windchill.js"></script>
