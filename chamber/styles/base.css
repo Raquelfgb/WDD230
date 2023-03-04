@@ -1,5 +1,5 @@
 header, footer{
-    background-color: rgb(5, 107, 107);
+    background-color: rgb(162, 208, 208);
     text-align: center;
     color:rgb(209, 238, 239);
     padding: 20px;
@@ -11,8 +11,12 @@ footer{
     justify-items: center;
 }
 
+footer img{
+    border-radius: 90px;
+}
+
 #banner{
-    background-color: rgb(213, 156, 156);
+    background-color: rgb(237, 228, 194);
     padding:10px;
     text-align: center;
     position: relative;
@@ -38,6 +42,7 @@ img{
 
 .layout img{
     grid-column: 1/2;
+    border-radius: 100px;
 }
 
 .title{
@@ -53,7 +58,6 @@ img{
 }
 
 .social img{
-    border-radius: 100px;
     max-width: 30px;
 }
 
@@ -88,8 +92,8 @@ nav {
 }
 
 .navigation a:hover, navigation a:active {
-	color: white;
-	background-color: rgb(28, 88, 94);
+	color: rgb(29, 115, 136);
+
 }
 
 
@@ -104,7 +108,7 @@ nav {
 fieldset{
     text-align: center;
     margin: 0 auto;
-    background-color: rgb(92, 200, 203);
+    background-color: rgb(57, 94, 95);
     color: white;
 }
 
