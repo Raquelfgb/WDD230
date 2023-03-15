@@ -10,7 +10,7 @@
     background-color: #c7e4fc;
 }
 
-.weather header, footer{
+.weather header{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,7 +47,7 @@
         }
     
     
-    .weather header {
+    .weather header, footer{
         padding-bottom: .5rem;
     }
    
