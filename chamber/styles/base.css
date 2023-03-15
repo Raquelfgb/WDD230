@@ -16,7 +16,7 @@ footer img{
 }
 
 #banner{
-    background-color: rgb(237, 228, 194);
+    background-color: rgb(179, 133, 156);
     padding:10px;
     text-align: center;
     position: relative;
@@ -119,8 +119,10 @@ main{
 
 .corpo section{
     padding: 20px;
+    margin:0;
     background-color:rgb(209, 238, 239);
     border: 10px solid rgb(247, 251, 250);
+    align-items: center;
 }
 
 .spotlight{
@@ -136,8 +138,9 @@ main{
 }
 
 
-img.hero{
-    float: auto;
+.hero img {
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: auto;
 }

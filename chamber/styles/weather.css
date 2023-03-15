@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.weather body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-color: #c7e4fc;
+}
+
+.weather header, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282760;
+    color: white;
+    padding: 2%;
+    margin: 0;
+}
+
+.weather main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.weather img{
+    max-width: 200px;
+}
+
+.weather h2 {
+    color: white;
+    background-color: #282760;
+    padding: .5rem;
+    text-align: center;
+    max-width: 50%;
+    border-radius: 50%;
+}
+
+@media only screen and (min-width: 35em) {
+
+    .weather body {
+        margin: auto;
+        }
+    
+    
+    .weather header {
+        padding-bottom: .5rem;
+    }
+   
+    }

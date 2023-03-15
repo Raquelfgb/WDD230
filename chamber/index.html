@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/weather.css">
 </head>  
 <body>
     <div id="banner">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</div>
@@ -44,11 +45,8 @@
     </header>
     <main class="corpo">
         <section class="hero">
-            <picture class="photo">
-                <source srcset="images/hero/hero-large.jpg" media="(min-width: 1280px)">
-                <source srcset="images/hero/hero-medium.jpg" media="(min-width: 768px) and (max-width: 1279px)" >
-                <img src="images/hero/hero-small.jpg" alt="Meeting" width="400px" height="200px">
-            </picture>
+            <h1>Welcome to Calgary Chamber of Commerce</h1>
+            <img srcset="images/towercalgary.jpeg 600w, images/towercalgary.jpeg 1100w, images/towercalgary.jpeg 1200w" src="images/towercalgary.jpeg" alt="Calgary Tower image">
         </section>
         <section class="event">
             <h3>Upcoming Events</h3>
@@ -58,8 +56,12 @@
         </section>
         <section class="weather">
             <h3>Weather</h3>
-            <img id="weatherIcon" src="" alt="weather icon">
-            <p>Currently: <span id="temp"></span>&#176;F</p>
+            <p>The current temperature in Calgary, Alberta is <span id="current-temp"></span> &deg;F</p>
+            <h3>Current Condition in Calgary</h3>
+            <figure>
+                <img src="" alt="" id="weathericon" />
+            <figcaption></figcaption>
+            </figure>
             <p>Wind Speed: <span id="speed"></span> mph</p>
             <p>WindChill: <span id="wind"></span>&#8457</p>
         </section>
@@ -117,5 +119,6 @@
     </footer>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weatherapi.js"></script>
 </body>  
 </html>
