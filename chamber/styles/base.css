@@ -15,6 +15,10 @@ footer img{
     border-radius: 90px;
 }
 
+#thanks h1{
+    text-align: center;
+}
+
 #banner{
     background-color: rgb(179, 133, 156);
     padding:10px;

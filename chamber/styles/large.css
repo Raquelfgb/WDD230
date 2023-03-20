@@ -69,5 +69,21 @@
         grid-row: 3/4;
         display: inline;
     }
+
+    footer{
+        display: grid;
+    }
+
+    footer img{
+        grid-column: 1/2;
+    }
+
+    footer .feet{
+        grid-column: 2/3;
+    }
+
+    footer .foot{
+        grid-column: 3/4;
+    }
    
 }
