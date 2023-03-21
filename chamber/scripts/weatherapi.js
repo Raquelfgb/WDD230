@@ -2,6 +2,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weathericon');
 const captionDesc = document.querySelector('figcaption');
+const windSpeed = document.querySelector("#speed");
 
 const url = "https://api.openweathermap.org/data/2.5/weather?q=Calgary&appid=37fd08a06ee97b04543c99aacac46d0d&units=imperial";
 
@@ -25,7 +26,7 @@ apiFetch();
 
 function  displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  
+    windSpeed.innerHTML = `<strong>${weatherData.wind.speed.toFixed(0)}</strong>`;
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
   
