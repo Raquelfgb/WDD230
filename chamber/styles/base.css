@@ -150,6 +150,12 @@ main{
     padding: auto;
 }
 
-h2{
+.hero h2{
     text-align: center;
+    text-shadow: 9px 9px 9px #575cc8;
+    color:rgb(16, 59, 60);
+    font-size: 50px;
+    margin: auto;
+    padding: auto;
+
 }
