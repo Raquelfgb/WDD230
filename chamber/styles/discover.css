@@ -1,21 +1,23 @@
 
 #images-box  img{
-    width: 100%;
+    width: 400px;
     height: auto;
 }
 
 #images-box{
-    padding: auto;
     display: grid;
 	grid-template-columns: 1fr;
 	grid-column-gap: 0.25rem;
 	width: 100%;
-	margin: 0 auto;
-    justify-content: center;
+	margin: 0;
+    padding: auto;
+    align-content: center;
     background: radial-gradient(rgba(216, 231, 227, 0.65), rgba(233, 244, 242, 0.95));
 }
 
 #images-box p{
     padding: 10px;
     box-shadow: 10px 10px 40px rgb(50, 128, 123);
+    text-align: center;
+    font-size: 30px;
 }

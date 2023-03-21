@@ -1,4 +1,4 @@
-const gridbutton = document.querySelector("#grid");
+/*const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
@@ -16,3 +16,4 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+*/
