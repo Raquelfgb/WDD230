@@ -15,6 +15,11 @@ footer img{
     border-radius: 90px;
 }
 
+.map{
+    border-radius: 0;
+    
+}
+
 #thanks h1{
     text-align: center;
 }
