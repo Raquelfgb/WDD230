@@ -44,14 +44,40 @@
         </fieldset>
     </header>
     <main class="contact">
-        <p><strong>Calgary Chamber of Commerce</strong></p><br>
-        <p>100 Tsutina Road Circle SE<br> 
-            Calgary, T1O1O1</p><br>
-        <p>info@calgarycc.org</p><br>
-        <p>+1(587)558-7878</p><br>
-            <span class="map"><img src="images/mapicon.png" alt="map of the Chamber"></span>
-            <a href="https://www.google.com/maps/search/100+Tsutina+Road+Circle+SE/@50.9103457,-113.9129882,12.04z">Location Map</a>
-        </p>
+        <div>
+            <img class="pic" src="images/calgaryhigh.jpeg" alt="Calgary">
+        </div>
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <div>
+                <div class="location">
+                    <h2>Location</h2>
+                    <p>100 Tsutina Road Circle SE<br> 
+                        Calgary, T1O1O1</p>
+                </div>
+                <div class="office">
+                    <h2>Office Hour</h2>
+                    <p>From 8 am to 5 pm <br>Mon - Fri</p>
+                    <p>+1(587)558-7878</p>
+                    <p>info@calgarycc.org</p>
+                </div>
+                <iframe src="images/mapicon.png" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <form action="thankyou.html">
+                <fieldset>
+                        <label for="name" class="inline">Full name: </label>
+                        <input type="text" id="name" name="name" required pattern="[A-Za-z]{1,}">
+                        <label for="phone" class="inline">Phone number: </label>
+                        <input type="tel" id="phone" name="phone">
+                        <label for="email" class="inline">Email: </label>
+                        <input type="email" id="email" name="email" required placeholder="email@mail.com">
+                        <label for="comment">Comment:</label>
+                        <textarea name="comment" id="comment" placeholder="Comment..." cols="20" rows="10"></textarea>
+                </fieldset>
+                <button class="click" type="submit" value="Message Us">
+            </form>
+        </div>
+        
     </main>
     <footer>
         <img src="images/logo10.png" alt="Logo for Chamber of Commerce of Calgary">

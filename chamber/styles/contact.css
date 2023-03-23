@@ -3,8 +3,8 @@
     grid-template-columns: 1fr;
 }
 
-.contact img{
+.pic{
     margin:0;
     padding: auto;
-    width: 80%;
+    width: 100%;
 }
