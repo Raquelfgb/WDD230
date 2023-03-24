@@ -1,4 +1,4 @@
-url ='https://raw.githubusercontent.com/Raquelfgb/wdd230/main/lesson09/card.json';
+url ='https://raw.githubusercontent.com/Raquelfgb/wdd230/main/chamber/card.json';
 
 
 
@@ -28,7 +28,8 @@ function displayLayouts(layouts) {
 	  let telephone = document.createElement("h3");
 	  let url = document.createElement("h3");
 
-	  h2.textContent = (`${layout.name}`);
+	  h2.textContent = (`${layouts[0].Name}`);
+    console.log(layout)
     address.textContent = (`${layout.address}`);
     telephone.textContent = (`${layout.telephone}`);
 	  url.textContent = (`${layout.url}`);
@@ -67,7 +68,7 @@ async function getUrlData(url) {
   const response = await fetch(url);
   if (response.ok) {
     const data = await response.json();
-    console.log(data);
+    console.log(data.layouts);
     displayLayouts(data.layouts);}
   
 }

@@ -28,12 +28,12 @@ function displayLayouts(layouts) {
 	  let telephone = document.createElement("h3");
 	  let url = document.createElement("h3");
 
-	  h2.textContent = (`${layout.name}`);
-    address.textContent = (`${layout.address}`);
-    telephone.textContent = (`${layout.telephone}`);
-	  url.textContent = (`${layout.url}`);
+	  h2.textContent = (`${layout.Name}`);
+    address.textContent = (`${layout.Address}`);
+    telephone.textContent = (`${layout.Telephone}`);
+	  url.textContent = (`${layout.Url}`);
 
-    logo.setAttribute('src', layout.logo);
+    logo.setAttribute('src', layout.Logo);
     logo.setAttribute('alt', (`Logo of ${layout['h2']}`));
     logo.setAttribute('loading', 'lazy');
 
@@ -53,6 +53,7 @@ const listbutton = document.querySelector("#list");
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
+  let layouts = document.querySelector('.layouts')
 	layouts.classList.add("grid");
 	layouts.classList.remove("list");
 });
@@ -60,6 +61,7 @@ gridbutton.addEventListener("click", () => {
 listbutton.addEventListener("click", showList); // example using defined function
 
 function showList() {
+  let layouts = document.querySelector('.layouts')
 	layouts.classList.add("list");
 	layouts.classList.remove("grid");
 }

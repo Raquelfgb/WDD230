@@ -7,12 +7,13 @@
 
 #images-box{
     display: flex;
+   
 	grid-template-columns: 1fr;
 	grid-column-gap: 0.25rem;
 	width: 100%;
 	margin: auto;
     padding: auto;
-    align-content: center;
+    justify-content: center;
     background: radial-gradient(rgba(216, 231, 227, 0.65), rgba(233, 244, 242, 0.95));
 }
 
@@ -21,4 +22,8 @@
     box-shadow: 10px 10px 40px rgb(50, 128, 123);
     text-align: center;
     font-size: 30px;
+}
+#images-box section {
+    display: flex;
+    flex-direction: column;
 }
