@@ -1,0 +1,35 @@
+.cards {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 0.25rem;
+	width: 300px;
+	margin: 0 auto;
+}
+
+body {
+	max-width: 60em;
+	margin: 0 auto;
+	font-family: ubuntu, sans-serif;
+    display: grid;
+    height: 100vh;
+  }
+
+section{ 
+    justify-content: center;
+    border: 1px solid #777;
+	padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 2;
+	color: black;
+	box-shadow: 0 0 40px rgb(50, 128, 123);
+  }
+
+@media only screen and (min-width: 32.5em){
+    .cards {
+      display: grid;
+      grid-template-columns: 4(1fr);
+      grid-column-gap: 0.25rem;
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
