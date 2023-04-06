@@ -1,0 +1,245 @@
+header, footer{
+    background-color: rgb(217, 101, 188);
+    text-align: center;
+    color:rgb(236, 232, 241);
+    padding: 20px;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 1fr 100px;
+    justify-items: center;
+}
+
+footer img{
+    border-radius: 90px;
+}
+
+#banner{
+    background-color: rgb(56, 52, 54);
+    padding:10px;
+    text-align: center;
+    position: relative;
+    color:rgb(206, 120, 185)
+}
+
+.bannershow{
+    display:block;
+}
+
+.bannerhidden{
+    display: none;
+}
+
+
+.layout{
+    display: grid;
+    height: auto;
+}
+
+.layout img{
+    grid-column: 1/2;
+    border-radius: 70px;
+    max-width: 200px;
+    padding: 30px;
+}
+
+.title{
+    color: white;
+    margin: auto;
+    grid-column: 2/3;
+}
+
+.social{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: auto;
+}
+
+.social img{
+    max-width: 30px;
+    height: auto;
+}
+
+nav {
+	margin: 0 auto;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 1rem;
+	text-align: left;
+	text-decoration: none;
+    color:aliceblue;
+}
+
+#menu::before {
+	content: "≡";
+	font-size: 2rem;
+}
+
+.navigation a:hover, navigation a:active {
+	color: rgb(29, 115, 136);
+
+}
+
+
+.responsive li {
+	display: block;
+}
+
+.responsive #menu::before {
+	content: "X";
+}
+
+fieldset{
+    text-align: center;
+    margin: auto;
+    background-color: rgb(46, 42, 46);
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	margin: auto;
+    padding: auto;
+    align-items: center;
+    background: radial-gradient(rgba(238, 216, 233, 0.65), rgba(173, 89, 152, 0.95));
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+	width: 100%;
+	margin: auto;
+    padding: auto;
+    align-items: center;
+}
+
+img{ 
+    margin: auto; 
+    padding: auto;
+}
+
+h1, h2, h3, h4 {
+    width: 100%;
+	margin: auto;
+    padding: 30px 0;
+    text-align: center;
+}
+
+h2{
+    width:fit-content;
+    border-bottom: 0.5rem solid #c337ae;
+    border-radius: 20% 0% 20% 0%;
+}
+
+a{
+	margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+	width: 100%;
+	margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.contact{
+    background-color: #9f969f;
+}
+
+.contact-info{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-info h2{
+    text-align: center;
+    border-bottom: 0.5rem solid #c337ae;
+    border-radius: 20% 0% 20% 0%;
+}
+
+.contact h2{
+    text-align: center;
+    border-bottom: 0.5rem solid #c337ae;
+    border-radius: 20% 20% 20% 20%;
+}
+
+.content{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    border:10px double rgb(206, 120, 185);
+    background-color: lightgray;
+}
+
+#map{
+    padding: 30px;
+}
+
+.titulo{
+    font-size: 80px;
+}
+
+.join fieldset{
+    background-color: lightgrey;
+}
+
+.join h2{
+    text-align: center;
+    border: 0.5rem solid rgb(217, 101, 188);
+    border-radius: 20% 00% 20% 00%;
+    background-color: rgb(217, 101, 188);
+    color: ghostwhite;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  
+
+@media only screen and (min-width: 1280px) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .layout nav{
+        grid-column: 3/4;
+        margin:auto;
+    }
+
+    .social{
+        grid-column: 4/5;
+        margin: auto;
+    }
+
+}}

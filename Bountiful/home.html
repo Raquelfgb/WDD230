@@ -1,35 +1,140 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Fruits</title>
-        <meta name="description" content="Json code for fruits page">
-        <link rel="stylesheet" href="styles/card.css">
-    
-    </head>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bountiful Foods</title>
+      <meta name="description" content="Final project for WDD230 winter 2023">
+      <meta name="author" content="Raquel de Freitas Greco Bueno">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/food.css">
+  </head>
 
 
 <body>
+    <div id="banner">🤝🏼 25% Off every Wednesday | Get free shipping over $99!</div>
     <header>
-        <h1>BOUNTIFUL FOODS</h1>
+        <div class="layout">
+          <img src="images/logo.png" alt="logo of the Bountiful Foods">
+          <div class="title">
+              <h1>BOUNTIFUL FOODS</h1>
+          </div>
+          <nav>
+              <ul class="navigation">
+                <li><a id="menu" href="#"></a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="fresh.html">Fresh</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+              </ul>
+          </nav>
+          <div class="social">
+              <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+              <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo"></a>
+              <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube logo"></a>
+          </div>
+      </div>
+      <fieldset>
+          <span id="date"></span>
+      </fieldset>
       </header>
-      <nav>
-        <ul class="navigation">
-            <li><a id="menu" href="#"></a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="fresh.html">Fresh</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-        </ul> 
-    </nav>
       <main>
-        
+        <div class="hero">
+          <h2>Bountiful Foods</h2>
+          <picture>
+              <source srcset="images/fruit.png" media="(min-width:768px) and (max-width:1279px)">
+              <source srcset="images/fruit.png" media="(min-width:1280px)">
+              <img src="images/fruit.png" class="hero-img" width="400" height="300"
+                  alt="image of fruits" >
+          </picture>
+          <a href="fresh.html">Get your customized drink here!</a>
+          
+          <p>We invite you to visit our store at Bountiful Foods in Carlsbad, and also in one of our fruit trucks all the way to the Coastal.</p>
+          <a href="#">Where you can find our fruit trucks?</a>
+          <a href="aboutus.html">More about us!</a>
+          <p>Bountiful Foods have the intention to support local farms in Califormia with organic fruits that maintain the nutrition value that are more important for your health!</p>
+          <img src="images/local2.png" alt="local farmers" width="400" height="300" loading="lazy" >
+          <p>The many variety of fruits are found in fruit Markets especially in Southern California.</p>
+          <img src="images/localfarm.png" alt="fruit market" width="400" height="300" loading="lazy" >
+          <h2>Ventura County</h2>
+          <img src="images/ventura.png" alt="ventura county coastal image" width="400" height="300" loading="lazy" >
+          <p>Ventura County is a county in the southern part of the U.S. state of California. 
+                As of the 2020 census, the population was 843,843.
+                The largest city is Oxnard, and the county seat is the city of Ventura.
+                Ventura County comprises the Oxnard Ventura, CA Metropolitan Statistical Area, 
+                which is part of the Greater Los Angeles area (Los Angeles-Long Beach, CA Combined Statistical Area). 
+                It is also considered the southernmost county along the California Central Coast. 
+                <a href="https://en.wikipedia.org/wiki/Ventura_County,_California"> Learn more ...</a>
+          </p>
+          <img src="images/fruittruck.png" alt="fruit truck coastal image" width="400" height="300" loading="lazy" >
+          <p>Out fruit truck attend over two thousand people a week in Ventura County. Come make part of it as well.</p>  
+          <br><br>
+          <div><h2>Your Customized Drinks</h2>
+          <p>You've created <span class="count" id="count"></span> customized drinks so far.<a href="fresh.html">Create one right now!</a></p>
+          <img  src="images/fruits1.png" alt="drinks" width="400" height="auto" loading="lazy" >
+</div> </div>
+        <div class="weather">
+              <h2 >Current Weather</h2>
+              <h3 >Carlsbad, CA</h3>
+              <div >
+                <p>Current:</p>
+                <p><img class="weathericon" src="images/weathericon.png" height="50" width="50" loading="lazy" alt="weather icon"></p>
+                <p><span id='current-temp'>50</span>°F</p>
+                <p><span id="forecast">Partly Cloudy</span></p>
+                <p id="speed">Wind</p>
+                <p>Wind Chill</p>
+              </div>
+              <hr class="weathertable">
+                <h4 class="">3 Day Forecast</h4>
+                <table id="" class="">
+                  <tr>
+                    <td>
+                      <p id="day1">Day 1</p>
+                    </td>
+                    <td><img class="weathericon" src="images/weathericon.png" height="50" width="50" alt="weather icon"></td>
+                    <td>
+                      <p><span id="">50</span>°F</p>
+                    </td>
+                    <td>
+                      <p><span id=''>Cloudy</span></p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p id="day2">Day 2</p>
+                    </td>
+                    <td><img class="weathericon" src="images/weathericon.png" height="50" width="50" alt="weather icon"></td>
+                    <td>
+                      <p><span id="">45</span>°F</p>
+                    </td>
+                    <td>
+                      <p><span id=''>Cloudy</span></p>
+                    </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <p id="day3">Day 3</p>
+                      </td>
+                      <td><img class="weathericon"  src="images/weathericon.png" height="50" width="50" alt="weather icon"></td>
+                      <td>
+                        <p><span id="">40</span>°F</p>
+                      </td>
+                      <td>
+                        <p><span id="">Cloudy</span></p>
+                      </td>
+                    </tr>
+                  </table>
+          </div>
+        </div>
+  
       </main>
       <footer>
         <div>
-          &copy;<span id="copyrightyear"></span> Bountiful Foods<span id="name">Raquel de Freitas Greco Bueno</span>WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
+          &copy;<span id="copyrightyear"></span> Bountiful Foods <span id="name"> Raquel de Freitas Greco Bueno </span>WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
       </div>
       </footer>
-      <script src="scripts/card.js"></script>
+      <script src="scripts/scripts.js"></script>
+      <script src="scripts/weatherapi.js"></script>
 </body>
 </html>

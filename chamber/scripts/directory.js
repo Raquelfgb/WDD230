@@ -30,7 +30,7 @@ function displayLayouts(layouts) {
 
 	  h2.textContent = (`${layout.Name}`);
     address.textContent = (`${layout.Address}`);
-    telephone.textContent = (`${layout.Telephone}`);
+    telephone.textContent = (`${layout.Telefone}`);
 	  url.textContent = (`${layout.Url}`);
 
     logo.setAttribute('src', layout.Logo);

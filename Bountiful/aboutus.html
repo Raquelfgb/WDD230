@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Fruits</title>
-        <meta name="description" content="Json code for fruits page">
-        <link rel="stylesheet" href="styles/card.css">
-    
-    </head>
-
-
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bountiful Foods</title>
+      <meta name="description" content="Final project for WDD230 winter 2023">
+      <meta name="author" content="Raquel de Freitas Greco Bueno">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/food.css">
+  </head>
 <body>
-    <header>
-        <h1>Fruits</h1>
-      </header>
-      <nav>
-        <ul class="navigation">
-            <li><a id="menu" href="#"></a></li>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="fresh.html">Fresh</a></li>
-            <li><a href="aboutus.html">About us</a></li>
-        </ul> 
-    </nav>
-      <main>
-        
+  <div id="banner">🤝🏼 25% Off every Wednesday | Get free shipping over $99!</div>
+  <header>
+      <div class="layout">
+        <img src="images/logo.png" alt="logo of the Bountiful Foods">
+        <div class="title">
+            <h1>BOUNTIFUL FOODS</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+              <li><a id="menu" href="#"></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="fresh.html">Fresh</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube logo"></a>
+        </div>
+    </div>
+    <fieldset>
+        <span id="date"></span>
+    </fieldset>
+
+    </header>
+      <main class="contact">
+        <h2 class="titulo">Bountiful Foods</h2>
+        <br>
+        <p class="content">Bountiful Foods is small business specializing in organic, locally grown foods. They are physically located in Carlsbad, California, however, they have many food trucks that cover the coastal area from Los Angeles to San Diego. The company sells fruits and produce directly from the farmers in the area, but also uses some national and international suppliers. The owner-operated company caters to walk in traffic at their storefront in Carlsbad and, of course, their food trucks. They deliver and manage those orders on the phone and via the website. The mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas. The theme should support healthy eating, organic bounty, and convenience!</p>
+        <div class="contact-info">
+          <h2>Contact Us</h2>
+          <div class="location">
+              <h3>Location</h3>
+              <p>Carlsbad, California</p>
+          </div>
+          <div class="office">
+              <h3>Office Hour</h3>
+              <p>From 8 am to 5 pm <br>Mon - Fri</p>
+              <p>+1(555)555-1010</p>
+              <p>info@foods.org</p>
+          </div>
+          <img id="map" src="images/mapicon.png" alt="Carlsbad location" width="400" height="300" loading="lazy">
+          </div>
       </main>
       <footer>
         <div>
-          &copy;<span id="copyrightyear"></span> Bountiful Foods<span id="name">Raquel de Freitas Greco Bueno</span>WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
+          &copy;<span id="copyrightyear"></span> Bountiful Foods <span id="name"> Raquel de Freitas Greco Bueno </span> WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
       </div>
       </footer>
-      <script src="scripts/card.js"></script>
+      <script src="scripts/scripts.js"></script>
 </body>
 </html>

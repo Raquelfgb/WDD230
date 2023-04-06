@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <title>Fruits</title>
-        <meta name="description" content="Json code for fruits page">
-        <link rel="stylesheet" href="styles/card.css">
-    
-    </head>
-
-
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bountiful Foods</title>
+      <meta name="description" content="Final project for WDD230 winter 2023">
+      <meta name="author" content="Raquel de Freitas Greco Bueno">
+      <link rel="stylesheet" href="styles/normalize.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles/food.css">
+  </head>
 <body>
-    <header>
-        <h1>Fruits</h1>
-      </header>
-      <nav><ul class="navigation">
-        <li><a id="menu" href="#"></a></li>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="fresh.html">Fresh</a></li>
-        <li><a href="aboutus.html">About us</a></li>
-    </ul> </nav>
-      <nav>
+  <div id="banner">🤝🏼 25% Off every Wednesday | Get free shipping over $99!</div>
+  <header>
+      <div class="layout">
+        <img src="images/logo.png" alt="logo of the Bountiful Foods">
+        <div class="title">
+            <h1>Bountiful Foods</h1>
+        </div>
+        <nav>
+            <ul class="navigation">
+              <li><a id="menu" href="#"></a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="fresh.html">Fresh</a></li>
+              <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook logo"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.png" alt="LinkedIn logo"></a>
+            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube logo"></a>
+        </div>
+    </div>
+    <fieldset>
+        <span id="date"></span>
+    </fieldset>
+    </header>
+      <nav class="filter">
         <button id="all">No Filter</button>
         <button id="carbohydrates">Low Carbo</button>
         <button id="protein">High Protein</button>
@@ -28,14 +45,31 @@
         <button id="calories">Low Calories</button>
         <button id="sugar">Sugar-free</button>
     </nav>
-      <main>
-        <div class="cards"></div>
-      </main>
-      <footer>
-        <div>
-          &copy;<span id="copyrightyear"></span> Bountiful Foods<span id="name">Raquel de Freitas Greco Bueno</span>WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
+  <main>
+    <div class="cards"></div>
+    <div class="join">
+      <h2>Build your customized specialty drink here!!!</h2>
+      <fieldset>
+        <h3>Customer</h3>
+        <label class="info">Name* <input type="text" name="fname" placeholder="First Name" required></label><br>
+        <label class="info">Email* <input type="email" name="email" placeholder="email@email.com" required></label><br>
+        <label class="info">Phone* <input type="tel" name="phone" placeholder="123456789" required></label><br>
+        <label class="info">Select a fruit*<select name="fruit1" id="fruit1" required><option value="">fruit1</option></select></label><br>
+        <label class="info">Select a fruit<select name="fruit2" id="fruit2"><option value="">fruit2</option></select></label><br>
+        <label class="info">Select a fruit<select name="fruit3" id="fruit3"><option value="">fruit3</option></select></label><br>
+        <label class="info">Special Instructions<textarea name="add" id="add" rows="3" cols="23"></textarea></label>
+        <button id="get-button" type="submit" class="submit-btn">Ready</button>
+        <button id="form-reset" type="reset" class="submit-btn reset-btn">Clear</button>
+        </fieldset>
+        <input type="hidden" id="datetime" name="datetime" value="CurrentTimedate">
       </div>
-      </footer>
-      <script src="scripts/card.js"></script>
+  </main>
+  <footer>
+    <div>
+          &copy;<span id="copyrightyear"></span> Bountiful Foods<span id="name">Raquel de Freitas Greco Bueno</span>WDD 230 Project <br> Last Modified: <span id="lastmodified"></span>
+    </div>
+  </footer>
+  <script src="scripts/scripts.js"></script>
+  <script src="scripts/jason.js"></script>
 </body>
 </html>

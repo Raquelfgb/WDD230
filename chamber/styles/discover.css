@@ -7,9 +7,6 @@
 
 #images-box{
     display: flex;
-   
-	grid-template-columns: 1fr;
-	grid-column-gap: 0.25rem;
 	width: 100%;
 	margin: auto;
     padding: auto;
